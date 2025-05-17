@@ -3,7 +3,6 @@
     "name": "mobile",
     "slug": "mobile",
     "version": "1.0.0",
-
     "scheme": "mobile",
     "web": {
       "bundler": "metro",
@@ -21,28 +20,34 @@
     ],
     "experiments": {
       "typedRoutes": true,
-
       "tsconfigPaths": true
     },
-
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-
     "userInterfaceStyle": "light",
-
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.kingjohney.mobile"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+      },
+      "package": "com.kingjohney.mobile"
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "abd25a2b-d62d-4b1f-9bec-2c90fa1519b8"
       }
     }
   }
